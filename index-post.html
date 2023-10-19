@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">-->
+  <link rel="stylesheet" type="text/css" href="css/npm_@fancyapps_ui_dist_fancybox.css" />
+  <link rel="stylesheet" type="text/css" href="css/slick.css" />
+  <link rel="stylesheet" type="text/css" href="css/npm_bootstrap@5.3.1_dist_css_bootstrap.min.css" />
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>CVator</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="main__exit-box">
+      <div class="main__exit">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="21" viewBox="0 0 30 21" fill="none">
+          <line y1="1" x2="30" y2="1" stroke="black" stroke-width="2"/>
+          <line y1="10" x2="30" y2="10" stroke="black" stroke-width="2"/>
+          <line y1="20" x2="30" y2="20" stroke="black" stroke-width="2"/>
+        </svg>
+      </div>
+    </div>
+    <div class="mainburger__menu">
+      <div class="mainburger__menu-container">
+        <div class="mainburger__menu-logo">
+          <img src="img/logo_2.png" alt="">
+        </div>
+        <div class="mainburger__ul">
+          <div class="mainburger__li">
+            <div class="mainburger__li-item item-builders">
+              <div class="mainburger__li-text">Builders</div>
+              <div class="mainburger__li-img">
+                <img src="img/arrow-ico.png" alt="">
+              </div>
+            </div>
+            <div class="mainburger__li-content content-builders" style="display: none;">
+              <div class="mainburger__li-wrapper">
+                <div class="mainburger__li-title">Resume Builder</div>
+                <div class="mainburger__li-subtitle">Our AI tool scans your old resume and job listings, 
+                  making the perfect resume for your next job.
+                </div>
+              </div>
+              <div class="mainburger__li-wrapper">
+                <div class="mainburger__li-title">Cover Letter Builder</div>
+                <div class="mainburger__li-subtitle">Our AI tool reviews your details and the job 
+                  description, creating a simple yet effective 
+                  cover letter for your application.
+                </div>
+              </div>
+              <div class="mainburger__li-wrapper">
+                <div class="mainburger__li-title">Interview Preparation</div>
+                <div class="mainburger__li-subtitle">Our AI tool checks your job details and offers 
+                  straightforward tips and practice 
+                  for acing your interview.
+                </div>
+              </div>
+              <div class="mainburger__li-wrapper">
+                <div class="mainburger__li-title">Job Vacancy Matcher</div>
+                <div class="mainburger__li-subtitle">Our AI tool checks your job details and offers 
+                  straightforward tips and practice 
+                  for acing your interview.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mainburger__li">
+            <div class="mainburger__li-item item-resume">
+              <div class="mainburger__li-text">Resume</div>
+              <div class="mainburger__li-img">
+                <img src="img/arrow-ico.png" alt="">
+              </div>
+            </div>
+            <div class="mainburger__li-content content-resume" style="display: none;">
+              <div class="mainburger__li-wrapper">
+                <div class="mainburger__li-title">Tailor My Resume</div>
+                <div class="mainburger__li-subtitle">Match your resume perfectly to job vacancies
+                </div>
+              </div>
+              <div class="mainburger__li-wrapper">
+                <div class="mainburger__li-title">Build From Scratch</div>
+                <div class="mainburger__li-subtitle">Craft a standout resume with expert guidance
+                </div>
+              </div>
+              <div class="mainburger__li-wrapper">
+                <div class="mainburger__li-title">Score My Resume</div>
+                <div class="mainburger__li-subtitle">Evaluate your resume and compare it to job postings
+                </div>
+              </div>
+              <div class="mainburger__li-wrapper">
+                <div class="mainburger__li-title">Resume Templates</div>
+                <div class="mainburger__li-subtitle">Designed by typographers, approved by recruiters
+                </div>
+              </div>
+              <div class="mainburger__li-wrapper">
+                <div class="mainburger__li-title">Resume Examples</div>
+                <div class="mainburger__li-subtitle">Browse resume samples from real people who got hired
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mainburger__li">
+            <div class="mainburger__li-item">
+              <div class="mainburger__li-text">Cover Letter</div>
+              <div class="mainburger__li-img">
+                <img src="img/arrow-ico.png" alt="">
+              </div>
+            </div>
+            <div class="mainburger__li-content"></div>
+          </div>
+          <div class="mainburger__li">
+            <div class="mainburger__li-item">
+              <div class="mainburger__li-text">Job Interview</div>
+              <div class="mainburger__li-img">
+                <img src="img/arrow-ico.png" alt="">
+              </div>
+            </div>
+            <div class="mainburger__li-content"></div>
+          </div>
+          <div class="mainburger__li">
+            <div class="mainburger__li-item item-career">
+              <div class="mainburger__li-text">Career Compass</div>
+              <div class="mainburger__li-img">
+                <img src="img/arrow-ico.png" alt="">
+              </div>
+            </div>
+            <div class="mainburger__li-content content-career" style="display: none;">
+              <div class="mainburger__li-wrapper">
+                <div class="mainburger__li-title">How to Write Resume Sections</div>
+                <div class="mainburger__li-subtitle">Read Full Resume Guide
+                </div>
+              </div>
+              <div class="mainburger__li-wrapper">
+                <div class="mainburger__li-title">How to Write Cover Letter</div>
+                <div class="mainburger__li-subtitle">Read Full Cover Letter Guide
+                </div>
+              </div>
+              <div class="mainburger__li-wrapper">
+                <div class="mainburger__li-title">How to Prepare for Job Interview</div>
+                <div class="mainburger__li-subtitle">Read Full Cover Letter Guide
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mainburger__li">
+            <div class="mainburger__li-item">
+              <div class="mainburger__li-text">FAQ</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="homeheader">
+      <div class="homeheader__blog-logo">
+        <img src="img/logo_2.png" alt="">
+      </div>
+      <div class="homeheader__navbar">
+        <div class="homeheader__nav-item dropdown-1">
+          <div class="homeheader__nav-link">Builders</div>
+          <div class="homeheader__dropdown-menu drop-1">
+            <div class="homeheader__menu-container">
+              <div class="homeheader__menu-col">
+                <div class="homeheader__menu-coltitle">Resume Builder</div>
+                <div class="homeheader__menu-colimg">
+                  <img src="img/builder-img.png" alt="">
+                </div>
+                <div class="homeheader__menu-colsubtitle">Our AI tool scans your old resume and job listings, 
+                  making the perfect resume for your next job.</div>
+              </div>
+              <div class="homeheader__menu-col">
+                <div class="homeheader__menu-coltitle">Cover Letter Builder</div>
+                <div class="homeheader__menu-colimg">
+                  <img src="img/builder-img.png" alt="">
+                </div>
+                <div class="homeheader__menu-colsubtitle">Our AI tool reviews your details and the job 
+                  description, creating a simple yet effective 
+                  cover letter for your application.</div>
+              </div>
+              <div class="homeheader__menu-col">
+                <div class="homeheader__menu-coltitle">Interview Preparation</div>
+                <div class="homeheader__menu-colimg">
+                  <img src="img/builder-img.png" alt="">
+                </div>
+                <div class="homeheader__menu-colsubtitle">Our AI tool checks your job details and offers 
+                  straightforward tips and practice 
+                  for acing your interview.</div>
+              </div>
+              <div class="homeheader__menu-col">
+                <div class="homeheader__menu-coltitle">Job Vacancy Matcher</div>
+                <div class="homeheader__menu-colimg">
+                  <img src="img/builder-img.png" alt="">
+                </div>
+                <div class="homeheader__menu-colsubtitle">Our AI tool checks your job details and offers 
+                  straightforward tips and practice 
+                  for acing your interview.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="homeheader__nav-item dropdown-2">
+          <div class="homeheader__nav-link">Resume</div>
+          <div class="homeheader__dropdown-menu drop-2">
+            <div class="homeheader__menu-container">
+              <div class="homeheader__menu-rescol">
+                <div class="homeheader__menu-colrestitle">Resume builders</div>
+                <div class="homeheader__menu-rowgrid">
+                  <div class="menu__rowgrid-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M15.1986 9.94435C14.7649 9.53358 14.4859 8.98601 14.4085 8.39371L14.0056 5.31126L11.275 6.79711C10.7503 7.08262 10.1433 7.17876 9.55608 7.06936L6.49998 6.50003L7.06931 9.55612C7.17871 10.1434 7.08257 10.7503 6.79707 11.275L5.31121 14.0056L8.39367 14.4085C8.98596 14.4859 9.53353 14.7649 9.94431 15.1986L12.0821 17.4555L13.4178 14.6485C13.6745 14.1091 14.109 13.6745 14.6484 13.4179L17.4555 12.0821L15.1986 9.94435ZM15.2238 15.5078L13.0111 20.1579C12.8687 20.4572 12.5107 20.5843 12.2115 20.4419C12.1448 20.4102 12.0845 20.3664 12.0337 20.3127L8.49229 16.574C8.39749 16.4739 8.27113 16.4095 8.13445 16.3917L3.02816 15.7242C2.69958 15.6812 2.46804 15.3801 2.51099 15.0515C2.52056 14.9782 2.54359 14.9074 2.5789 14.8425L5.04031 10.3191C5.1062 10.198 5.12839 10.0579 5.10314 9.92241L4.16 4.85979C4.09931 4.53402 4.3142 4.22074 4.63997 4.16005C4.7126 4.14652 4.78711 4.14652 4.85974 4.16005L9.92237 5.10319C10.0579 5.12843 10.198 5.10625 10.319 5.04036L14.8424 2.57895C15.1335 2.42056 15.4979 2.52812 15.6562 2.81919C15.6916 2.88409 15.7146 2.95495 15.7241 3.02821L16.3916 8.13449C16.4095 8.27118 16.4739 8.39754 16.5739 8.49233L20.3127 12.0337C20.5533 12.2616 20.5636 12.6414 20.3357 12.8819C20.2849 12.9356 20.2246 12.9794 20.1579 13.0111L15.5078 15.2238C15.3833 15.2831 15.283 15.3833 15.2238 15.5078ZM16.0206 17.4349L17.4348 16.0207L21.6775 20.2633L20.2633 21.6775L16.0206 17.4349Z" fill="#475569"/>
+                    </svg>
+                  </div>
+                  <div class="menu__rowgrid-pretitle">
+                    <div class="menu__rowgrid-title">Tailor My Resume</div>
+                    <div class="menu__rowgrid-svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" fill="#475569"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="menu__rowgrid-subtitle">Match your resume perfectly to job vacancies</div>
+                </div>
+                <div class="homeheader__menu-rowgrid">
+                  <div class="menu__rowgrid-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M8.00008 6V9H5.00008V6H8.00008ZM3.00008 4V11H10.0001V4H3.00008ZM13.0001 4H21.0001V6H13.0001V4ZM13.0001 11H21.0001V13H13.0001V11ZM13.0001 18H21.0001V20H13.0001V18ZM10.7072 16.2071L9.29297 14.7929L6.00008 18.0858L4.20718 16.2929L2.79297 17.7071L6.00008 20.9142L10.7072 16.2071Z" fill="#475569"/>
+                    </svg>
+                  </div>
+                  <div class="menu__rowgrid-pretitle">
+                    <div class="menu__rowgrid-title">Build From Scratch</div>
+                    <div class="menu__rowgrid-svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" fill="#475569"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="menu__rowgrid-subtitle">Craft a standout resume with expert guidance</div>
+                </div>
+                <div class="homeheader__menu-rowgrid">
+                  <div class="menu__rowgrid-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M14.5998 8.00033H21C22.1046 8.00033 23 8.89576 23 10.0003V12.1047C23 12.3659 22.9488 12.6246 22.8494 12.8662L19.755 20.3811C19.6007 20.7558 19.2355 21.0003 18.8303 21.0003H2C1.44772 21.0003 1 20.5526 1 20.0003V10.0003C1 9.44804 1.44772 9.00033 2 9.00033H5.48184C5.80677 9.00033 6.11143 8.84246 6.29881 8.57701L11.7522 0.851355C11.8947 0.649486 12.1633 0.581978 12.3843 0.692483L14.1984 1.59951C15.25 2.12534 15.7931 3.31292 15.5031 4.45235L14.5998 8.00033ZM7 10.5878V19.0003H18.1606L21 12.1047V10.0003H14.5998C13.2951 10.0003 12.3398 8.77128 12.6616 7.50691L13.5649 3.95894C13.6229 3.73105 13.5143 3.49353 13.3039 3.38837L12.6428 3.0578L7.93275 9.73038C7.68285 10.0844 7.36341 10.3746 7 10.5878ZM5 11.0003H3V19.0003H5V11.0003Z" fill="#475569"/>
+                    </svg>
+                  </div>
+                  <div class="menu__rowgrid-pretitle">
+                    <div class="menu__rowgrid-title">Score My Resume</div>
+                    <div class="menu__rowgrid-svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" fill="#475569"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="menu__rowgrid-subtitle">Evaluate your resume and compare it to job postings</div>
+                </div>
+              </div>
+              <div class="homeheader__menu-rescol">
+                <div class="homeheader__menu-colrestitle">Resume builders</div>
+                <div class="homeheader__menu-gridcont">
+                  <div class="homeheader__menu-gridblock gridblock-1">
+                    <div class="menu-gridblock-title">Classic</div>
+                    <div class="menu-gridblock-subtitle">Clean, focused with balanced 
+                      structure templates</div>
+                  </div>
+                  <div class="homeheader__menu-gridblock gridblock-2">
+                    <div class="menu-gridblock-title">Professional</div>
+                    <div class="menu-gridblock-subtitle">Authoritative templates that 
+                      highlight accomplishments</div>
+                  </div>
+                  <div class="homeheader__menu-gridblock gridblock-3">
+                    <div class="menu-gridblock-title">Modern</div>
+                    <div class="menu-gridblock-subtitle">Fresh, contemporary templates 
+                      with up-to-date design elements.</div>
+                  </div>
+                  <div class="homeheader__menu-gridblock gridblock-4">
+                    <div class="menu-gridblock-title">Creative</div>
+                    <div class="menu-gridblock-subtitle">Unique, artistic templates that 
+                      stand out from the crowd</div>
+                  </div>
+                </div>
+              </div>
+              <div class="homeheader__menu-rescol">
+                <div class="homeheader__menu-colrestitle">Resume builders</div>
+                <div class="homeheader__menu-colresul">
+                  <div class="homeheader__menu-colresli">
+                    <div class="menu__colresli-svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M10.5 9L7.5 12V6L10.5 9Z" fill="#475569"/>
+                      </svg>
+                    </div>
+                    <div class="menu__colresli-text">Sales Manager</div>
+                  </div>
+                  <div class="homeheader__menu-colresli">
+                    <div class="menu__colresli-svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M10.5 9L7.5 12V6L10.5 9Z" fill="#475569"/>
+                      </svg>
+                    </div>
+                    <div class="menu__colresli-text">Teacher</div>
+                  </div>
+                  <div class="homeheader__menu-colresli">
+                    <div class="menu__colresli-svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M10.5 9L7.5 12V6L10.5 9Z" fill="#475569"/>
+                      </svg>
+                    </div>
+                    <div class="menu__colresli-text">Product Manager</div>
+                  </div>
+                  <div class="homeheader__menu-colresli">
+                    <div class="menu__colresli-svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M10.5 9L7.5 12V6L10.5 9Z" fill="#475569"/>
+                      </svg>
+                    </div>
+                    <div class="menu__colresli-text">Account Manager</div>
+                  </div>
+                  <div class="homeheader__menu-colresli">
+                    <div class="menu__colresli-svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M10.5 9L7.5 12V6L10.5 9Z" fill="#475569"/>
+                      </svg>
+                    </div>
+                    <div class="menu__colresli-text">Support Manager</div>
+                  </div>
+                </div>
+                <div class="homeheader__menu-colresaft">
+                  <div class="homeheader__menu-colrestext">See all Resume Examples</div>
+                  <div class="homeheader__menu-colressvg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                      <path d="M12.1287 8.25017L8.1057 4.22716L9.16635 3.1665L15 9.00017L9.16635 14.8337L8.1057 13.7731L12.1287 9.75017H3V8.25017H12.1287Z" fill="#475569"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="homeheader__nav-item">
+          <div class="homeheader__nav-link">Cover Letter</div>
+        </div>
+        <div class="homeheader__nav-item">
+          <div class="homeheader__nav-link">Job Interview</div>
+        </div>
+        <div class="homeheader__nav-item dropdown-5">
+          <div class="homeheader__nav-link">Career Resources </div>
+          <div class="homeheader__dropdown-menu drop-5">
+            <div class="homeheader__menu-container">
+              <div class="homeheader__menu-carcol">
+                <div class="homeheader__menu-colrestitle">How to Write Resume Sections</div>
+                <div class="homeheader__menu-colresul">
+                  <div class="homeheader__menu-colresli">
+                    <div class="menu__colresli-svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M10.5 9L7.5 12V6L10.5 9Z" fill="#475569"/>
+                      </svg>
+                    </div>
+                    <div class="menu__colresli-text">How to make a resume</div>
+                  </div>
+                  <div class="homeheader__menu-colresli">
+                    <div class="menu__colresli-svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M10.5 9L7.5 12V6L10.5 9Z" fill="#475569"/>
+                      </svg>
+                    </div>
+                    <div class="menu__colresli-text">Successful resume formats</div>
+                  </div>
+                  <div class="homeheader__menu-colresli">
+                    <div class="menu__colresli-svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M10.5 9L7.5 12V6L10.5 9Z" fill="#475569"/>
+                      </svg>
+                    </div>
+                    <div class="menu__colresli-text">Resume Skills Section</div>
+                  </div>
+                  <div class="homeheader__menu-colresli">
+                    <div class="menu__colresli-svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M10.5 9L7.5 12V6L10.5 9Z" fill="#475569"/>
+                      </svg>
+                    </div>
+                    <div class="menu__colresli-text">How to write Work Experience</div>
+                  </div>
+                  <div class="homeheader__menu-colresli">
+                    <div class="menu__colresli-svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M10.5 9L7.5 12V6L10.5 9Z" fill="#475569"/>
+                      </svg>
+                    </div>
+                    <div class="menu__colresli-text">Resume Summary Examples</div>
+                  </div>
+                </div>
+                <div class="homeheader__menu-colresaft">
+                  <div class="homeheader__menu-colrestext">Read Full Resume Guide</div>
+                  <div class="homeheader__menu-colressvg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                      <path d="M12.1287 8.25017L8.1057 4.22716L9.16635 3.1665L15 9.00017L9.16635 14.8337L8.1057 13.7731L12.1287 9.75017H3V8.25017H12.1287Z" fill="#475569"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="homeheader__menu-carcol">
+                <div class="homeheader__menu-colrestitle">How to Write Cover Letter</div>
+                <div class="homeheader__menu-colresul">
+                  <div class="homeheader__menu-colresli">
+                    <div class="menu__colresli-svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M10.5 9L7.5 12V6L10.5 9Z" fill="#475569"/>
+                      </svg>
+                    </div>
+                    <div class="menu__colresli-text">How to make a resume</div>
+                  </div>
+                  <div class="homeheader__menu-colresli">
+                    <div class="menu__colresli-svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M10.5 9L7.5 12V6L10.5 9Z" fill="#475569"/>
+                      </svg>
+                    </div>
+                    <div class="menu__colresli-text">Successful resume formats</div>
+                  </div>
+                  <div class="homeheader__menu-colresli">
+                    <div class="menu__colresli-svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M10.5 9L7.5 12V6L10.5 9Z" fill="#475569"/>
+                      </svg>
+                    </div>
+                    <div class="menu__colresli-text">Resume Skills Section</div>
+                  </div>
+                  <div class="homeheader__menu-colresli">
+                    <div class="menu__colresli-svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M10.5 9L7.5 12V6L10.5 9Z" fill="#475569"/>
+                      </svg>
+                    </div>
+                    <div class="menu__colresli-text">How to write Work Experience</div>
+                  </div>
+                  <div class="homeheader__menu-colresli">
+                    <div class="menu__colresli-svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M10.5 9L7.5 12V6L10.5 9Z" fill="#475569"/>
+                      </svg>
+                    </div>
+                    <div class="menu__colresli-text">Resume Summary Examples</div>
+                  </div>
+                </div>
+                <div class="homeheader__menu-colresaft">
+                  <div class="homeheader__menu-colrestext">Read Full Cover Letter Guide</div>
+                  <div class="homeheader__menu-colressvg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                      <path d="M12.1287 8.25017L8.1057 4.22716L9.16635 3.1665L15 9.00017L9.16635 14.8337L8.1057 13.7731L12.1287 9.75017H3V8.25017H12.1287Z" fill="#475569"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="homeheader__menu-carcol">
+                <div class="homeheader__menu-colrestitle">How to Prepare for Job Interview</div>
+                <div class="homeheader__menu-colresul">
+                  <div class="homeheader__menu-colresli">
+                    <div class="menu__colresli-svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M10.5 9L7.5 12V6L10.5 9Z" fill="#475569"/>
+                      </svg>
+                    </div>
+                    <div class="menu__colresli-text">How to make a resume</div>
+                  </div>
+                  <div class="homeheader__menu-colresli">
+                    <div class="menu__colresli-svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M10.5 9L7.5 12V6L10.5 9Z" fill="#475569"/>
+                      </svg>
+                    </div>
+                    <div class="menu__colresli-text">Successful resume formats</div>
+                  </div>
+                  <div class="homeheader__menu-colresli">
+                    <div class="menu__colresli-svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M10.5 9L7.5 12V6L10.5 9Z" fill="#475569"/>
+                      </svg>
+                    </div>
+                    <div class="menu__colresli-text">Resume Skills Section</div>
+                  </div>
+                  <div class="homeheader__menu-colresli">
+                    <div class="menu__colresli-svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M10.5 9L7.5 12V6L10.5 9Z" fill="#475569"/>
+                      </svg>
+                    </div>
+                    <div class="menu__colresli-text">How to write Work Experience</div>
+                  </div>
+                  <div class="homeheader__menu-colresli">
+                    <div class="menu__colresli-svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M10.5 9L7.5 12V6L10.5 9Z" fill="#475569"/>
+                      </svg>
+                    </div>
+                    <div class="menu__colresli-text">Resume Summary Examples</div>
+                  </div>
+                </div>
+                <div class="homeheader__menu-colresaft">
+                  <div class="homeheader__menu-colrestext">Read Full Cover Letter Guide</div>
+                  <div class="homeheader__menu-colressvg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                      <path d="M12.1287 8.25017L8.1057 4.22716L9.16635 3.1665L15 9.00017L9.16635 14.8337L8.1057 13.7731L12.1287 9.75017H3V8.25017H12.1287Z" fill="#475569"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="homeheader__nav-item">
+          <div class="homeheader__nav-link nav-link--none">FAQ</div>
+        </div>
+      </div>
+      <div class="homeheader__btn-box">
+        <div class="homeheader__btn btn-black">Build my Resume</div>
+        <div class="homeheader__btn btn-white">Log In</div>
+      </div>
+    </div>
+    <div class="postmain">
+      <div class="postmain__heading">
+        <div class="postmain__heading-container">
+          <div class="postmain__heading-left">
+            <div class="postmain__heading-taxonmy">
+              <div class="heading__taxonomy taxonomy-underline"><span>Blog</span></div>
+              <div class="heading__taxonomy taxonomy-underline"><span>Career</span></div>
+              <div class="heading__taxonomy">Your Career Compass...</div>
+            </div>
+            <div class="postmain__heading-title">Your Career Compass: Navigating Your Professional Journey</div>
+            <div class="postmain__heading-block">
+              <div class="postmain__heading-subtitle">Dive into our Career Compass blog, where we illuminate the path to professional success. From crafting compelling resumes </div>
+              <div class="postmain__heading-subtitle">to acing interviews, discover tips, insights, and expert advice to steer your career in the right direction.</div>
+            </div>
+            <div class="postmain__heading-timeshift">15 min to read</div>
+          </div>
+          <div class="postmain__heading-right">
+            <div class="postmain__heading-imgbox">
+              <img src="img/article-img-1.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="postmain__content">
+        <div class="postmain__content-container">
+          <div class="postmain__content-left">
+            <div class="postmain__left-title">Table of Contents</div>
+            <div class="postmain__left-undeline">
+              <div class="postmain__left-prog"></div>
+            </div>
+            <div class="postmain__left-ul">
+              <div class="postmain__left-li postmain__left-li--active">What’s the rush to start working again?</div>
+              <div class="postmain__left-li">Putting your life back together following treatment</div>
+              <div class="postmain__left-li">Where do you start?</div>
+              <div class="postmain__left-li">What is the next step?</div>
+            </div>
+          </div>
+          <div class="postmain__burger">
+            <div class="postmain__burger-top">
+              <div class="postmain__burger-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="21" viewBox="0 0 30 21" fill="none">
+                  <line y1="1" x2="30" y2="1" stroke="black" stroke-width="2"/>
+                  <line y1="10" x2="30" y2="10" stroke="black" stroke-width="2"/>
+                  <line y1="20" x2="30" y2="20" stroke="black" stroke-width="2"/>
+                </svg>
+              </div>
+              <div class="postmain__burger-title">Table of Contents</div>
+            </div>
+            <div class="postmain__burger-bottom" style="display: none;">
+              <div class="postmain__left-ul">
+                <div class="postmain__left-li postmain__left-li--active">What’s the rush to start working again?</div>
+                <div class="postmain__left-li">Putting your life back together following treatment</div>
+                <div class="postmain__left-li">Where do you start?</div>
+                <div class="postmain__left-li">What is the next step?</div>
+              </div>
+            </div>
+          </div>
+          <div class="postmain__content-right">
+            <div class="postmain__top-block">
+              <div class="postmain__top-title">Putting your life back together following treatment for a substance use disorder is comparable to a full-time job. How can you manage an actual job search simultaneously after rehab? Here, we explore the challenges and rewards of reentering the workforce while recovery remains your top priority.</div>
+              <div class="postmain__top-subtitle">No matter how daunting it might seem, there are many reasons to be optimistic about reentering the workforce after completing a rehabilitation program. The long-term benefits of both achievements are mutually reinforcing on the recovery journey towards a stable and fulfilling life.</div>
+              <div class="postmain__top-subtitle">Granted, it may not be easy finding a job after rehab. But with patience, determination, and a commitment to sobriety, the right job search strategies have every chance of success.</div>
+              <div class="postmain__top-subtitle">We’ve put together some insights and guidance to help job seekers get hired after rehab. Here’s what we’ll discuss:</div>
+            </div>
+            <div class="postmain__middle-block">
+              <div class="postmain__middle-title">What’s the rush to start working again?</div>
+              <div class="postmain__middle-subtitle">The desire to start working again as soon as possible after completing rehab is not uncommon. This may be motivated by the need to establish a new routine that will also include regular support group attendance, developing healthy habits, and rebuilding social relationships. Obviously, financial independence is often an early priority after rehab, and with that comes a renewed sense of purpose.</div>
+            </div>
+            <div class="postmain__bottom-block">
+              <div class="postmain__bottom-top">
+                <div class="postmain__bottom-svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M13 10H20L11 23V14H4L13 1V10Z" fill="#475569"/>
+                  </svg>
+                </div>
+                <div class="postmain__bottom-info">Important Info</div>
+              </div>
+              <div class="postmain__bottom-underline"></div>
+              <div class="postmain__bottom-text">The desire to start working again as soon as possible after completing rehab is not uncommon. This may be motivated by the need to establish a new routine that will also include regular support group attendance, developing healthy habits, and rebuilding social relationships. Obviously, financial independence is often an early priority after rehab, and with that comes a renewed sense of purpose.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>-->
+<script src="js/ajax.googleapis.com_ajax_libs_jquery_3.6.0_jquery.min.js"></script>
+<script src="js/cdn.jsdelivr.net_npm_@fancyapps_ui@4.0_dist_fancybox.umd.js"></script>
+<script src="js/cdn.jsdelivr.net_npm_slick-carousel@1.8.1_slick_slick.min.js"></script>
+<script src="js/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_js_bootstrap.bundle.min.js"></script>
+<script src="js/sticksy.min.js"></script>
+<script src="js/main-post.js"></script>
+</html>
